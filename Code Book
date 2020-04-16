@@ -1,0 +1,48 @@
+---
+title: " Codebook"
+output: codebook
+---
+
+## CODE BOOK  
+
+this code book  describes the variables, the data, and any transformations or work that I performed to clean up the data
+
+
+# data
+
+
+
+- 'features_info.txt': Shows information about the variables used on the feature vector.
+
+- 'features.txt': List of  name of all   561  features.
+
+- 'activity_labels.txt': Links the class labels with the 6 activity name.
+
+- 'train/X_train.txt': a table of calclulated features with 7352 observation for training subgroup
+
+- 'train/y_train.txt': lable of the activity for the traing subgroub
+
+- 'train/subject_train.txt': Identifier for the voulnteer in traing subgroub
+
+- 'test/X_test.txt':  a table of calclulated features with 2947 observation for test subgroup
+
+- 'test/y_test.txt': lable of the activity for the test subgroub
+
+- 'test/subject_test.txt': Identifier for the voulnteer in test group
+
+
+#variable 
+
+Identifier :  assigned number for the specific voulnteer
+ActivityLable :  lable for the activtity among walking, sitting , walking up stair...
+561  feature variable : these are calculated using accelerometer and gyroscope 3-axial the more conmplete information could be find in features_info
+
+#transformation
+
+1. merging test.txt in one data.frame which consists of 563 variable and 2947 observation named test_data
+
+2. merging train.txt in one data.frame which consists of 563 variable and 7352  observation  named train_data
+
+3. fulldata : merged of test and train dataset has complete observation of  10299
+
+4.  Teadydata : name the  full data variable and transformed it to a tidy data set.
